@@ -1,0 +1,33 @@
+<main>
+    <section class="section-taks">
+        <app-container>
+            <div class="container">
+                <form (submit)="submit()" [formGroup]="taskForm">
+                    <input required type="text" placeholder="Tarefa" id="input" formControlName="task" />
+                    <button type="submit" >
+                        <img src="/plus.svg" alt="Plus" width="30">
+                    </button>
+                    <div *ngIf="error" class="error">Campo obrigatório</div>
+                </form>
+                <div class="container-tasks">
+                    <h1>Tarefas pendentes</h1>
+                    <div *ngFor="let task of tasks" class="shadow-card task">
+                        <span>{{task.task}}</span>
+                        <div class="container-buttons">
+                            <button (click)="toogleDone(task)" class="btn-remove">
+                                <span>Feita</span>
+                            </button>
+                            <button (click)="deleteTask(task)" class="btn-remove">
+                                <span>Deletar</span>
+                            </button>
+                        </div>
+                    </div>
+                    <h2>Tarefas concluídas</h2>
+                    <div *ngFor="let task of doneTasks" class="shadow-card task">
+                        <span>{{task.task}}</span>
+                    </div>
+                </div>
+            </div>
+        </app-container>
+    </section>
+</main>

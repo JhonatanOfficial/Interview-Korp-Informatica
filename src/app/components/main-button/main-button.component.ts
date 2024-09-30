@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+
+import { Component, input, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-button',
@@ -10,4 +12,7 @@ import { Component, Input } from '@angular/core';
 export class MainButtonComponent {
 
   @Input() text: string = "" 
+  @Input() href: string = ""
+
+
 }

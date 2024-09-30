@@ -2,9 +2,7 @@
 
 /* Mobile: Tablet: até 900px */
 @media screen and (max-width: 1000px) {
-    nav {
-        display: none;
-     }
+   
 
      .logo {
         width: 8rem;

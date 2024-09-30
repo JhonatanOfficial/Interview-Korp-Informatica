@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
-import { SectionHeroComponent } from "./components/section-hero/section-hero.component";
-import { CustomersComponent } from "./components/customers/customers.component";
-import { ServicesSectionComponent } from "./components/services-section/index/services-section.component";
+import Lenis from 'lenis'
+import { FooterComponent } from "./components/footer/footer.component";
+
 
 
 @Component({
   selector: 'app-root', standalone: true,
-  imports: [RouterOutlet, HeaderComponent, SectionHeroComponent, CustomersComponent, ServicesSectionComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -16,5 +16,4 @@ import { ServicesSectionComponent } from "./components/services-section/index/se
 export class AppComponent  {
   title = 'positivus-tasks-website';
 
-  
 }

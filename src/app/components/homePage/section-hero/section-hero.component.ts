@@ -1,9 +1,11 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { ContainerComponent } from "../container/container.component";
-import { MainButtonComponent } from "../main-button/main-button.component";
+
 import { NgOptimizedImage } from '@angular/common';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { MainButtonComponent } from '../../main-button/main-button.component';
+import { ContainerComponent } from '../../container/container.component';
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -12,13 +14,14 @@ gsap.registerPlugin(ScrollTrigger)
   standalone: true,
   imports: [ContainerComponent, MainButtonComponent, NgOptimizedImage],
   templateUrl: './section-hero.component.html',
-  styleUrls: ['./section-hero.component.css', './_responsive.css', '../../../_variables.css']
+  styleUrls: ['./section-hero.component.css', './_responsive.css']
 })
 export class SectionHeroComponent implements AfterViewInit  {
   @ViewChild('section') sectionHero!: ElementRef;
   @ViewChild('title') titleRef!: ElementRef;
   @ViewChild('p') p!: ElementRef;
   imgPath = "/hero-section/megaphone.png"
+
 
   ngAfterViewInit() {
     this.animateText()

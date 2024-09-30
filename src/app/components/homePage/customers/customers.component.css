@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: .5rem 0;
+    padding: .5rem 0;
     gap: 5vw;
     width: 100%;
     background-color: white;

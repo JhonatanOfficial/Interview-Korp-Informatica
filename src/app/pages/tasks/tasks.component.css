@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 1rem;
+    gap: 2rem;
+    min-height: 100vh;
+
+    & form {
+        width: 50%;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+
+        & .error {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 1rem;
+            background-color: red;
+            font-weight: bold;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
+
+        & input {
+            width: 100%;
+            padding: .8rem 1.2rem;
+            font-size: 1rem;
+            border-start-start-radius: 1rem;
+            outline: none;
+            border: none;
+            background-color: var(--secondary-color);
+
+        }
+
+        & button {
+            border: none;
+            background-color: var(--primary-color);
+            padding: 1rem;
+            border-end-end-radius: 1rem;
+            cursor: pointer;
+
+
+        }
+    }
+
+    & .container-tasks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 var(--padding-x);
+        & .task {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            width: 100%;
+
+            & input {
+                width: 1rem;
+            }
+        }
+
+        & .container-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            & button {
+                padding: .8rem;
+                border-radius: var(--rounded-size);
+                cursor: pointer;
+
+                & span {
+                    font-weight: 700;
+                    font-size: 1rem;
+                }
+            }
+
+            & button:first-child {
+                background-color: green;
+             
+                & span {
+                  color: white;
+                  
+                }
+            }
+            & button:last-child {
+                background-color: red;
+             
+                & span {
+                  color: black;
+                  
+                }
+            }
+        }
+    }
+}

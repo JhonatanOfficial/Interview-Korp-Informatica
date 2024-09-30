@@ -1,8 +1,8 @@
 import { NgFor } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { ContainerComponent } from "../container/container.component";
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { ContainerComponent } from '../../container/container.component';
 
 gsap.registerPlugin(ScrollTrigger)
 @Component({
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
   standalone: true,
   imports: [NgFor, ContainerComponent],
   templateUrl: './customers.component.html',
-  styleUrls: ['./customers.component.css', '../../../_variables.css']
+  styleUrls: ['./customers.component.css',]
 })
 export class CustomersComponent implements AfterViewInit {
 
@@ -32,11 +32,11 @@ export class CustomersComponent implements AfterViewInit {
       { x: 0, },
       {
         x: -400,
+        duration: 10 ,
         scrollTrigger: {
           trigger: container,
-          start: 'start 80%',
-          end: '+=500',
-          scrub: 1
+         
+          scrub: 2
         }
       })
   }

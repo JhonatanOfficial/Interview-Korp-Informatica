@@ -1,5 +1,7 @@
 section {
-    padding: 0 var(--padding-x);
+    padding: 1rem var(--padding-x);
+    position: relative;
+    z-index: 10;
 }
 
 .container {

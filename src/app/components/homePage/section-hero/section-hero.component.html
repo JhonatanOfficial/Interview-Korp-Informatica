@@ -1,0 +1,23 @@
+<section id="inicio">
+    <app-container>
+
+        <div class="hero" #section>
+            <div class="hero-left-side">
+                <div class="container-text">
+                    <h1 #title >Gerencie Suas Tarefas de Forma Eficiente</h1>
+                    <img class="img-megaphone" [ngSrc]="imgPath" width="200" height="100" alt="Logo" priority />
+                    <p #p>Mantenha o controle de suas tarefas diárias com facilidade. Nosso gerenciador de tarefas intuitivo ajuda você a priorizar e organizar suas atividades. Aumente sua produtividade e alcance seus objetivos de maneira simples e rápida!</p>
+                </div>
+             <div class="container-btns">
+                <app-main-button text="Contato"/>
+                <a class="test-btn" routerLink="/tarefas" href="/tarefas">Teste grátis</a>
+             </div>
+           
+            </div>
+            <div class="hero-right-side">
+                <img class="img-megaphone" [ngSrc]="imgPath" width="200" height="100" alt="Logo" priority />
+            </div>
+      
+        </div>
+    </app-container>
+</section>

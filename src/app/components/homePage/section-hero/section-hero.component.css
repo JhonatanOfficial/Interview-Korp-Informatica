@@ -3,7 +3,7 @@ section {
     overflow: hidden;
     position: sticky;
     top: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .hero {
@@ -58,4 +58,18 @@ section {
 .img-megaphone {
     width: 80%;
     height: 100%;
+}
+
+.container-btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & .test-btn {
+        color: black;
+        font-size: 1.125rem;
+        background-color: var(--primary-color);
+        padding: 1rem .5rem;
+        border-radius: .5rem;
+    }
 }
