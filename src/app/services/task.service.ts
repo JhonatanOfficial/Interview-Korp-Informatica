@@ -8,7 +8,7 @@ import { UserTask } from '../@types/task';
 })
 export class TaskService {
 
-  private apiUrl = 'http://localhost:3000/tasks';
+  private apiUrl = 'https://interview-korp-informatica.vercel.app/tasks';
 
   constructor(private http: HttpClient) { }
 
