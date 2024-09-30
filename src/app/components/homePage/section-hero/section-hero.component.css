@@ -71,5 +71,6 @@ section {
         background-color: var(--primary-color);
         padding: 1rem .5rem;
         border-radius: .5rem;
+        text-wrap: nowrap;
     }
 }

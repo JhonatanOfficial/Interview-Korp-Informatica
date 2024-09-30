@@ -52,6 +52,7 @@ export class TasksComponent implements OnInit {
     this.tasks = dado.filter(task => !this.doneTasks.some(doneTask => doneTask.id === task.id)); 
   });
 }
+
   deleteTask(task: UserTask) {
     this.taskService.deleteTask(task).subscribe(() =>
       (this.tasks = this.tasks.filter((t) => t.id !== task.id)));
