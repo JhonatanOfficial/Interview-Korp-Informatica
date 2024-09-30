@@ -1,0 +1,56 @@
+section {
+    padding: 0 var(--padding-x);
+}
+
+.container {
+
+    display: flex ;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem 0 0 0;
+
+    & .container-text {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        & h2 {
+            background-color: var(--primary-color);
+            padding: .3rem;
+            border-radius: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        & p {
+            max-width: 580px;
+            font-size: var(--paragraph-size);
+        }
+    }
+
+    & .service-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    & .card-service-contact {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--secondary-color);
+        border-radius: var(--rounded-size);
+
+        & .container-text-contact{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            height: max-content;
+            padding: clamp(2rem, 50%, 4rem);
+            max-width: 35rem;
+        }
+
+        & div:has(img) {
+            padding: 1rem;
+        }
+    }
+
+}

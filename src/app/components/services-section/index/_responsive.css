@@ -1,0 +1,19 @@
+
+
+
+@media screen and (max-width: 800px) {
+    .service-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .container-text {
+        align-items: start !important;
+        flex-direction: column;
+    }
+
+    .card-service-contact div:has(img) img {
+        display: none;
+    }
+
+
+}

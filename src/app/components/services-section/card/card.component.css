@@ -1,0 +1,41 @@
+
+
+.card {
+ 
+    width: 100%;
+    border-radius: var(--rounded-size);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    background-color: #F3F3F3;
+    max-height: 20rem;
+   
+
+    & div:has(span) {
+        display: flex;
+        flex-direction: column;
+
+        & span {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            padding: .3rem .3rem;
+            text-wrap: nowrap;
+        }
+    }
+
+    & div:not(:has(span)) {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        & img {
+            width: clamp(2rem, 100%, 13rem);
+            height: 100%;
+        }
+    }
+}

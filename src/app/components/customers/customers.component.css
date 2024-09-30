@@ -1,0 +1,33 @@
+.container-customers {
+    padding: 0 var(--padding-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: .5rem 0;
+    gap: 5vw;
+    width: 100%;
+    background-color: white;
+    width: max-content;
+
+    & .container-customer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        width: 8rem;
+        height: 5rem;
+        
+        & .container-customer:hover {
+            transform: scale();
+        }
+
+        & img {
+            width: 100%;
+            filter: grayscale(100%);
+        
+        }
+    }
+
+
+}
